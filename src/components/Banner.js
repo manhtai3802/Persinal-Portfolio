@@ -65,7 +65,7 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi! I'm Judy`}{" "}
+                    {`Hi! I'm Manh Tai`}
                     <span
                       className="txt-rotate"
                       dataperiod="1000"
@@ -75,11 +75,13 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    I like simplicity and novelty so I always try to make myself
+                    more valuable day by day. Currently I'm a Front-end
+                    developer. I can work with ReactJs and Javascript at a basic
+                    level. I'm trying to learn more day by day to become more
+                    proficient. Good communication and always listen to people.
+                    Proficiency in HTML, CSS, JavaScript, React.js. Current
+                    working location: Thanh Xuan, Ha Noi
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />

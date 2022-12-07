@@ -1,48 +1,57 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import "animate.css";
+// import "animate.css";
+import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+import colorSharp2 from "../assets/img/color-sharp2.png";
+import FormSubmit from "../assets/img/FormSubmit.png";
+import MemberCard from "../assets/img/MemberCard.png";
+import MenuFood from "../assets/img/MenuFood.png";
+import ToastMessage from "../assets/img/toastmessage2.png";
+import Todo from "../assets/img/Todo.png";
+import WebListenMusic from "../assets/img/WebListenMusic.png";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
+      title: "Menu Food",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: MenuFood,
+      linkDeploy: "https://charming-fudge-a30792.netlify.app/",
     },
     {
-      title: "Business Startup",
+      title: "Member Card",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: MemberCard,
+      linkDeploy: "https://melodic-tartufo-51c0eb.netlify.app/",
     },
     {
-      title: "Business Startup",
+      title: "Todo List",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: Todo,
+      linkDeploy: "https://gleaming-croquembouche-4985e7.netlify.app/",
     },
     {
-      title: "Business Startup",
+      title: "Web Listen Music",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: WebListenMusic,
+      linkDeploy: "https://moonlit-sunshine-67faf2.netlify.app/",
     },
     {
-      title: "Business Startup",
+      title: "Form Submit",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: FormSubmit,
+      linkDeploy: "https://adorable-parfait-b6b81a.netlify.app/",
     },
     {
-      title: "Business Startup",
+      title: "Toast Message",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: ToastMessage,
+      linkDeploy: "https://gorgeous-crumble-d57cc0.netlify.app/",
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="projects" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -54,11 +63,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    {" "}
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s
-                  </p>
+                  <p>A few of my projects I did while studying</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -89,7 +94,7 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
