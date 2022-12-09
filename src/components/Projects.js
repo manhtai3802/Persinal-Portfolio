@@ -1,4 +1,4 @@
-// import "animate.css";
+import "animate.css";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import colorSharp2 from "../assets/img/color-sharp2.png";

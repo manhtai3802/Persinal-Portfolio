@@ -641,3 +641,57 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+/************ Circle Skills Css ************/
+* {
+  font-weight: 700;
+}
+
+.item {
+  display: flex;
+  height: fit-content;
+  width: auto;
+}
+
+.single-chart {
+  width: 80%;
+  justify-content: space-around;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  fill: none;
+  animation: progress 2s ease-out forwards;
+  position: relative;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #9a4cb1;
+}
+
+.percentage {
+  fill: rgb(210, 206, 206);
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
