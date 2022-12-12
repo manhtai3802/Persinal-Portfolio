@@ -1,7 +1,6 @@
-import TrackVisibility from "react-on-screen";
-
 import colorSharp from "../assets/img/color-sharp.png";
 import CircleSkills from "./CircleSkills";
+import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
   const circles = [
@@ -43,7 +42,6 @@ export const Skills = () => {
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.
               </p>
-
               <div className="item">
                 {circles.map((circle, index) => {
                   return <CircleSkills key={index} {...circle} />;

@@ -1,6 +1,5 @@
 import "animate.css";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
-import TrackVisibility from "react-on-screen";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import FormSubmit from "../assets/img/FormSubmit.png";
 import MemberCard from "../assets/img/MemberCard.png";
@@ -55,68 +54,196 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h2>Projects</h2>
-                  <p>A few of my projects I did while studying</p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+            <h2>Projects</h2>
+            <p>A few of my projects I did while studying</p>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              <Nav
+                variant="pills"
+                className="nav-pills justify-content-center align-items-center"
+                id="pills-tab"
+                defaultActiveKey="/home"
+              >
+                <Nav.Item>
+                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                </Nav.Item>
+              </Nav>
+              <Tab.Content id="slideInUp">
+                <Tab.Pane eventKey="first">
+                  <div class="title-project">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Tab.Container>
                     <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                      defaultActiveKey="/home"
+                      variant="tabs"
+                      className="justify-content-center align-items-center information-project"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link
+                          eventKey="menuFood"
+                          className="item-information-project "
+                        >
+                          Menu Food
+                        </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link
+                          eventKey="memberCard"
+                          className="item-information-project"
+                        >
+                          Member Card
+                        </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link
+                          eventKey="todo"
+                          className="item-information-project"
+                        >
+                          Todo
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          eventKey="webListen"
+                          className="item-information-project"
+                        >
+                          Web Listen
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          eventKey="formSubmit"
+                          className="item-information-project"
+                        >
+                          From Submit
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          eventKey="toastMessage"
+                          className="item-information-project"
+                        >
+                          Menu Food
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
-                      <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
+                    <Tab.Content>
+                      <Tab.Pane eventKey="menuFood">
+                        <ul className="menu-food">
+                          <li>
+                            Link Github: https://github.com/manhtai3802/menuFood
+                          </li>
+                          <li>
+                            Description: The site displays lists, searches for
+                            dishes, When clicking on the dishes, there are
+                            cooking instructions.Have a list of favorites to
+                            make it easier to find when you add them
+                          </li>
+                          <li>
+                            Technologies used: ReactJs Hook (useContext,
+                            useState, useEffect), React Icon, axios
+                          </li>
+                        </ul>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="memberCard">
+                        <ul className="memberCard">
+                          <li>
+                            Link Github: https://github.com/manhtai3802/menuFood
+                          </li>
+                          <li>
+                            Description: The site displays lists, searches for
+                            dishes, When clicking on the dishes, there are
+                            cooking instructions.Have a list of favorites to
+                            make it easier to find wn you add them
+                          </li>
+                          <li>
+                            Technologies used: ReactJs Hook (useContext,
+                            useState, useEffect), React Icon, axios
+                          </li>
+                        </ul>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="todo">
+                        <ul className="todo">
+                          <li>
+                            Link Github: https://github.com/manhtai3802/menuFood
+                          </li>
+                          <li>
+                            Description: The site displays lists, searches for
+                            dishes, When clicking the dishes, there are cooking
+                            instructions.Have a list of favorites to make it
+                            easier to find when you add them
+                          </li>
+                          <li>
+                            Technologies used: ReactJs Hook (useContext,
+                            useState, useEffect), React Icon, axios
+                          </li>
+                        </ul>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="webListen">
+                        <ul className="webListen">
+                          <li>
+                            Link Github: https://github.com/manhtai3802/menuFood
+                          </li>
+                          <li>
+                            Description: The site displays lists, searches for
+                            dishes, When n the dishes, there are cooking
+                            instructions.Have a list of favorites to make it
+                            easier to find when you add them
+                          </li>
+                          <li>
+                            Technologies used: ReactJs Hook (useContext,
+                            useState, useEffect), React Icon, axios
+                          </li>
+                        </ul>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="formSubmit">
+                        <ul className="formSubmit">
+                          <li>
+                            Link Github: https://github.com/manhtai3802/menuFood
+                          </li>
+                          <li>
+                            Descriptionsite displays lists, searches for dishes,
+                            When clicking on the dishes, there are cooking
+                            instructions.Have a list of favorites to make it
+                            easier to find when you add them
+                          </li>
+                          <li>
+                            Technologies used: ReactJs Hook (useContext,
+                            useState, useEffect), React Icon, axios
+                          </li>
+                        </ul>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="toastMessage">
+                        <ul className="toastMessage">
+                          <li>
+                            Link Github: https://github.com/manhtai3802/menuFood
+                          </li>
+                          <li>
+                            Description: The site displays lists, searches for
+                            dishes, When clicking on the dishes, there are
+                            cooking instructions.Have a list of favorites to
+                            make it easier to find when you add them
+                          </li>
+                          <li>
+                            Technologies used: ReactJs Hook (useContext,
+                            useState, useEffect), React Icon, axios
+                          </li>
+                        </ul>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
-                </div>
-              )}
-            </TrackVisibility>
+                </Tab.Pane>
+              </Tab.Content>
+            </Tab.Container>
           </Col>
         </Row>
       </Container>
