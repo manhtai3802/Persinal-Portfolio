@@ -1,11 +1,10 @@
 import colorSharp from "../assets/img/color-sharp.png";
 import CircleSkills from "./CircleSkills";
-import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
   const circles = [
     {
-      percentageCircle: "30",
+      percentageCircle: "60",
       title: "HTML",
     },
     {
@@ -14,19 +13,15 @@ export const Skills = () => {
     },
     {
       percentageCircle: "60",
-      title: "Javascript",
+      title: "JS",
     },
     {
       percentageCircle: "70",
       title: "React",
     },
     {
-      percentageCircle: "20",
-      title: "React",
-    },
-    {
-      percentageCircle: "100",
-      title: "React",
+      percentageCircle: "50",
+      title: "Library other",
     },
   ];
 
@@ -35,12 +30,12 @@ export const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
+            <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
+                Some of my skills in programming.
+                <br />
+                The assessment is only subjective by myself, thank you.
               </p>
               <div className="item">
                 {circles.map((circle, index) => {

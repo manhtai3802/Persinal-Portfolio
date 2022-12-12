@@ -1,7 +1,6 @@
-// import "./CircleSkills.css";
-
 const CircleSkills = ({ percentageCircle, title }) => {
   const percentageCircles = `${percentageCircle} 100`;
+
   return (
     <div className="single-chart">
       <svg viewBox="0 0 36 36" className="circular-chart orange">

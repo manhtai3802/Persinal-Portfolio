@@ -55,7 +55,6 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <h2>Projects</h2>
-            <p>A few of my projects I did while studying</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
@@ -64,16 +63,16 @@ export const Projects = () => {
                 defaultActiveKey="/home"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                  <Nav.Link eventKey="first">Title</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                  <Nav.Link eventKey="second">Description</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
                   <div class="title-project">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A few of my projects I did while studying.
                   </div>
                   <Row>
                     {projects.map((project, index) => {
@@ -145,8 +144,10 @@ export const Projects = () => {
                           <li>
                             Description: The site displays lists, searches for
                             dishes, When clicking on the dishes, there are
-                            cooking instructions.Have a list of favorites to
-                            make it easier to find when you add them
+                            cooking instructions.
+                            <br />
+                            Have a list of favorites to make it easier to find
+                            when you add them
                           </li>
                           <li>
                             Technologies used: ReactJs Hook (useContext,
@@ -157,86 +158,86 @@ export const Projects = () => {
                       <Tab.Pane eventKey="memberCard">
                         <ul className="memberCard">
                           <li>
-                            Link Github: https://github.com/manhtai3802/menuFood
+                            Link Github:
+                            https://github.com/manhtai3802/MemberCard
                           </li>
                           <li>
-                            Description: The site displays lists, searches for
-                            dishes, When clicking on the dishes, there are
-                            cooking instructions.Have a list of favorites to
-                            make it easier to find wn you add them
+                            Description: On the Home page will manage the number
+                            of people in the group, add and remove people by
+                            selecting an avatar.
+                            <br />
+                            Select the Teams section and display the number of
+                            members, positions, and majors
                           </li>
                           <li>
-                            Technologies used: ReactJs Hook (useContext,
-                            useState, useEffect), React Icon, axios
+                            Technologies used: ReactJs Hook (useEffect,
+                            useState), React Router
                           </li>
                         </ul>
                       </Tab.Pane>
                       <Tab.Pane eventKey="todo">
                         <ul className="todo">
                           <li>
-                            Link Github: https://github.com/manhtai3802/menuFood
+                            Link Github: https://github.com/manhtai3802/AppTodo
                           </li>
                           <li>
-                            Description: The site displays lists, searches for
-                            dishes, When clicking the dishes, there are cooking
-                            instructions.Have a list of favorites to make it
-                            easier to find when you add them
+                            Description: The Todo app has functions such as
+                            adding tasks, deleting, marking complete and
+                            incomplete.
+                            <br /> Have items to view completed and unfinished
+                            tasks
                           </li>
                           <li>
-                            Technologies used: ReactJs Hook (useContext,
-                            useState, useEffect), React Icon, axios
+                            Technologies used: ReactJs Hook (useEffect,
+                            useState)
                           </li>
                         </ul>
                       </Tab.Pane>
                       <Tab.Pane eventKey="webListen">
                         <ul className="webListen">
                           <li>
-                            Link Github: https://github.com/manhtai3802/menuFood
+                            Link Github:
+                            https://github.com/manhtai3802/listen-music
                           </li>
                           <li>
-                            Description: The site displays lists, searches for
-                            dishes, When n the dishes, there are cooking
-                            instructions.Have a list of favorites to make it
-                            easier to find when you add them
+                            Description: Basic music player application with
+                            functions such as start, pause, transfer next song,
+                            return to previous song, randomly select.
+                            <br /> Can select songs to run in the playlist, fast
+                            forward songs on the time bar, and some other
+                            effects when the song is played
                           </li>
-                          <li>
-                            Technologies used: ReactJs Hook (useContext,
-                            useState, useEffect), React Icon, axios
-                          </li>
+                          <li>Technologies used: Javascript, Bootstrap</li>
                         </ul>
                       </Tab.Pane>
                       <Tab.Pane eventKey="formSubmit">
                         <ul className="formSubmit">
                           <li>
-                            Link Github: https://github.com/manhtai3802/menuFood
+                            Link Github:
+                            https://github.com/manhtai3802/FormSubmit
                           </li>
                           <li>
-                            Descriptionsite displays lists, searches for dishes,
-                            When clicking on the dishes, there are cooking
-                            instructions.Have a list of favorites to make it
-                            easier to find when you add them
+                            Description: Full registration form to register an
+                            account, with full name, password, email, gender
+                            <br />
+                            Error message when a user does not enter as required
+                            or does not enter with some required cells
                           </li>
-                          <li>
-                            Technologies used: ReactJs Hook (useContext,
-                            useState, useEffect), React Icon, axios
-                          </li>
+                          <li>Technologies used: Javascript</li>
                         </ul>
                       </Tab.Pane>
                       <Tab.Pane eventKey="toastMessage">
                         <ul className="toastMessage">
                           <li>
-                            Link Github: https://github.com/manhtai3802/menuFood
+                            Link Github:
+                            https://github.com/manhtai3802/toast_message
                           </li>
                           <li>
-                            Description: The site displays lists, searches for
-                            dishes, When clicking on the dishes, there are
-                            cooking instructions.Have a list of favorites to
-                            make it easier to find when you add them
+                            Description: When clicking on a button will display
+                            its notifications, notifications can be turned off
+                            and have an effect when notifications run out
                           </li>
-                          <li>
-                            Technologies used: ReactJs Hook (useContext,
-                            useState, useEffect), React Icon, axios
-                          </li>
+                          <li>Technologies used: Javascript</li>
                         </ul>
                       </Tab.Pane>
                     </Tab.Content>
