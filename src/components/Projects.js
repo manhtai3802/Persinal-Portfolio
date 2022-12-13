@@ -71,7 +71,7 @@ export const Projects = () => {
               </Nav>
               <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
-                  <div class="title-project">
+                  <div className="title-project">
                     A few of my projects I did while studying.
                   </div>
                   <Row>
@@ -115,7 +115,7 @@ export const Projects = () => {
                           eventKey="webListen"
                           className="item-information-project"
                         >
-                          Web Listen
+                          Web Listen Music
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
@@ -131,7 +131,7 @@ export const Projects = () => {
                           eventKey="toastMessage"
                           className="item-information-project"
                         >
-                          Menu Food
+                          Toast Message
                         </Nav.Link>
                       </Nav.Item>
                     </Nav>
